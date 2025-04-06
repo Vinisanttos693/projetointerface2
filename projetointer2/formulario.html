@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário do Torcedor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulário do Torcedor Rubro-Negro</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <label>Nome: <input type="text" name="nome" required></label><br>
+            <label>Email: <input type="email" name="email" required></label><br>
+            <label>Idade: <input type="number" name="idade" required></label><br>
+            <label>Data de Nascimento: <input type="date" name="nascimento"></label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferências</legend>
+            <p>Você é sócio torcedor?</p>
+            <label><input type="radio" name="socio" value="sim" required> Sim</label>
+            <label><input type="radio" name="socio" value="nao"> Não</label><br>
+
+            <p>Escolha os produtos oficiais que você possui (obrigatório escolher pelo menos um):</p>
+            <label><input type="checkbox" name="camisa" required> Camisa</label>
+            <label><input type="checkbox" name="boné"> Boné</label>
+            <label><input type="checkbox" name="bandeira"> Bandeira</label><br>
+
+            <p>Como conheceu o Flamengo?</p>
+            <select name="origem">
+                <option value="familia">Família</option>
+                <option value="amigos">Amigos</option>
+                <option value="tv">TV</option>
+                <option value="outro">Outro</option>
+            </select><br>
+
+            <label>Mensagem para o Mengão:<br>
+                <textarea name="mensagem" rows="4" cols="40"></textarea>
+            </label><br>
+
+            <label>Senha de acesso ao clube: <input type="password" name="senha"></label><br>
+            <label>Cor favorita: <input type="color" name="cor"></label><br>
+            <label>Envie sua foto com a camisa: <input type="file" name="foto"></label><br>
+            <label>Quanto tempo torce pro Fla? <input type="range" name="tempo" min="1" max="50"></label><br>
+        </fieldset>
+
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Enviar">
+    </form>
+    <p><a href="index.html">Voltar para a página inicial</a></p>
+</body>
+</html>
